@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PwC Acronym Finder — Juhi Desai</title>
+<meta name="description" content="How I turned a multi-page acronym reference into a conversational search experience, through four rounds of iteration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,480;0,9..144,560;0,9..144,600;1,9..144,480&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <span class="mono">JD</span>
+      <span class="brand-name">Juhi Desai</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">About</a>
+      <a href="../experiences.html">Experiences</a>
+      <a href="../projects.html" class="is-active">Projects</a>
+      <a href="mailto:your.email@example.com" class="nav-contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="cs-hero">
+    <div class="container">
+      <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+      <span class="cs-tag experimental">AI Product</span>
+      <h1 class="mt-3">PwC Acronym Finder</h1>
+      <p class="lede mt-2">Conversational knowledge search &middot; PwC</p>
+      <div class="cs-meta-row">
+        <span class="cs-meta">Custom GPT</span>
+        <span class="cs-meta">Information architecture</span>
+        <span class="cs-meta">Firm-wide tool</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Problem</div>
+      <div class="cs-section-body">
+        <h2>A multi-page reference, hard to search</h2>
+        <p class="lede">PwC had a large multi-page source of acronyms. Finding the meaning of a specific acronym quickly was cumbersome.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ITERATION STORY -->
+  <section class="cs-section bg-alt">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Iteration</div>
+      <div class="cs-section-body">
+        <h2>Test &rarr; Observe &rarr; Iterate &rarr; Improve</h2>
+        <p class="lede">Getting this right took four rounds of restructuring the underlying information&mdash;not the model, the information architecture.</p>
+
+        <div class="mt-6">
+          <p class="text-muted eyebrow" style="font-size:0.72rem;">Version 1</p>
+          <div class="process-flow" style="margin-top:0.5rem;">
+            <div class="process-node"><span class="label">Website</span><span class="sub">Many pages, hard to search</span></div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <p class="text-muted eyebrow" style="font-size:0.72rem;">Version 2</p>
+          <div class="process-flow" style="margin-top:0.5rem;">
+            <div class="process-node"><span class="label">Extracted to CSV</span></div>
+            <div class="process-connector">→</div>
+            <div class="process-node problem"><span class="label">Poor retrieval</span><span class="sub">The Custom GPT struggled to retrieve accurate results</span></div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <p class="text-muted eyebrow" style="font-size:0.72rem;">Version 3</p>
+          <div class="process-flow" style="margin-top:0.5rem;">
+            <div class="process-node"><span class="label">Converted to Word docs</span></div>
+            <div class="process-connector">→</div>
+            <div class="process-node problem"><span class="label">Still inconsistent</span><span class="sub">Large documents didn&rsquo;t consistently produce accurate responses</span></div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <p class="text-muted eyebrow" style="font-size:0.72rem;">Version 4</p>
+          <div class="process-flow" style="margin-top:0.5rem;">
+            <div class="process-node"><span class="label">Split into 4 groups</span><span class="sub">A–E &middot; F–L &middot; M–R &middot; S–Z</span></div>
+            <div class="process-connector">→</div>
+            <div class="process-node solution"><span class="label">Improved retrieval</span><span class="sub">Faster, more accurate acronym lookups</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I BUILT -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">What I built</div>
+      <div class="cs-section-body">
+        <h2>A conversational search experience</h2>
+        <p class="lede">I transformed a multi-page knowledge source into a conversational search experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="cs-section bg-alt">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Impact</div>
+      <div class="cs-section-body">
+        <h2>Made available firm-wide</h2>
+        <p class="lede">The tool was made available across the firm and used by PwC employees.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I LEARNED -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">What I learned</div>
+      <div class="cs-section-body">
+        <h2>Structure is the product</h2>
+        <p class="pull-quote">Information architecture directly affects AI UX.</p>
+        <p>Building an AI experience isn&rsquo;t only about the model or the interface&mdash;how the underlying information is structured shapes whether the whole thing actually works.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section" style="border-bottom:none;">
+    <div class="container text-center">
+      <a href="../projects.html" class="link-arrow">← Back to Projects</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="brand"><span class="mono">JD</span><span class="brand-name">Juhi Desai</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">About</a>
+        <a href="../experiences.html">Experiences</a>
+        <a href="../projects.html">Projects</a>
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Juhi Desai.</span>
+      <span>Designed &amp; developed with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAP S/4HANA Billing Assistant — Juhi Desai</title>
+<meta name="description" content="A Custom GPT built to give PwC consultants contextual, step-by-step guidance across billing workflows.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,480;0,9..144,560;0,9..144,600;1,9..144,480&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <span class="mono">JD</span>
+      <span class="brand-name">Juhi Desai</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">About</a>
+      <a href="../experiences.html">Experiences</a>
+      <a href="../projects.html" class="is-active">Projects</a>
+      <a href="mailto:your.email@example.com" class="nav-contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="cs-hero">
+    <div class="container">
+      <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+      <span class="cs-tag">AI Product</span>
+      <h1 class="mt-3">SAP S/4HANA Billing Assistant</h1>
+      <p class="lede mt-2">AI workflow assistant &middot; PwC</p>
+      <div class="cs-meta-row">
+        <span class="cs-meta">Custom GPT</span>
+        <span class="cs-meta">Workflow &amp; documentation design</span>
+        <span class="cs-meta">Consultant-facing tool</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTEXT / PROBLEM -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Problem</div>
+      <div class="cs-section-body">
+        <h2>Billing information was scattered</h2>
+        <p class="lede">Project billing information was spread across hundreds of documents and FAQs. Consultants often had to search through large amounts of information to figure out what went wrong or determine how to proceed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="cs-section bg-alt">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Solution</div>
+      <div class="cs-section-body">
+        <h2>A contextual, step-by-step guide</h2>
+        <p class="lede">I created a Custom GPT that used relevant billing documentation and FAQs to provide contextual, step-by-step guidance.</p>
+        <p>The assistant could help users across different billing workflows, including:</p>
+        <ul>
+          <li>Fixed price billing</li>
+          <li>Milestone billing</li>
+          <li>Monthly billing</li>
+        </ul>
+        <p>A user could also provide a screenshot, allowing the assistant to infer where they were in the workflow and provide relevant next steps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I BUILT IT -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">How I built it</div>
+      <div class="cs-section-body">
+        <h2>Documentation → instructions → examples → iteration</h2>
+        <p>This was built as a Custom GPT&mdash;not a custom-trained model. I supplied relevant information and documents, defined instructions, gave examples of desired outputs, tested the experience, and iterated.</p>
+        <div class="step-list mt-5">
+          <div class="step-item">
+            <span class="step-num">01</span>
+            <p>Curated relevant billing documentation and FAQs.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">02</span>
+            <p>Defined instructions and conversation flows.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">03</span>
+            <p>Added examples of desired responses.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">04</span>
+            <p>Tested the experience and iterated.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USER EXPERIENCE (chat mock) -->
+  <section class="cs-section bg-alt">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">User Experience</div>
+      <div class="cs-section-body">
+        <h2>What using it felt like</h2>
+        <p>Below is a portfolio representation of the assistant&rsquo;s conversation style&mdash;built with fictional, sanitized example content. It is not a screenshot of internal PwC software.</p>
+
+        <div class="chat-mock mt-5">
+          <div class="chat-head">
+            <span class="chat-dot"></span><span class="chat-dot"></span><span class="chat-dot"></span>
+            <span class="chat-title mt-0" style="margin-left:8px;">Billing Assistant (portfolio recreation)</span>
+          </div>
+          <div class="chat-body">
+            <div class="chat-bubble user">My milestone billing invoice hasn&rsquo;t generated for Project Atlas. Here&rsquo;s a screenshot of where I&rsquo;m stuck.</div>
+            <div class="chat-bubble bot">Thanks for the screenshot&mdash;it looks like Milestone 2 hasn&rsquo;t been marked complete yet, which is what triggers invoice generation. Here&rsquo;s what to check next:<br><br>1. Confirm Milestone 2 approval status<br>2. Verify the billing schedule matches the SOW<br>3. Re-run the invoice draft once approved</div>
+            <div class="chat-bubble user">Got it. What&rsquo;s different for fixed price vs. monthly billing here?</div>
+            <div class="chat-bubble bot">For fixed price billing, invoices are tied to milestone completion. For monthly billing, invoices generate on a recurring schedule regardless of milestone status. Want the step-by-step for switching a project&rsquo;s billing type?</div>
+          </div>
+          <div class="disclaimer">Portfolio representation &middot; fictional example content &middot; not actual PwC software or data</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Impact</div>
+      <div class="cs-section-body">
+        <h2>Adopted across teams</h2>
+        <p class="lede">The assistant was used by PwC consultants across multiple teams.</p>
+        <p>This was one part of a broader set of AI workflow initiatives that, together, reduced 400+ hours of manual effort&mdash;not a figure specific to this tool alone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I LEARNED -->
+  <section class="cs-section bg-alt">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">What I learned</div>
+      <div class="cs-section-body">
+        <h2>Good AI guidance meets people where they are</h2>
+        <p class="pull-quote">The most useful version of this tool wasn&rsquo;t the one with the most information&mdash;it was the one that could meet a consultant exactly where they were stuck, screenshot and all.</p>
+        <p>Designing for real workflows meant thinking less like a document search tool and more like a knowledgeable colleague who already understood the process.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section" style="border-bottom:none;">
+    <div class="container text-center">
+      <a href="../projects.html" class="link-arrow">← Back to Projects</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="brand"><span class="mono">JD</span><span class="brand-name">Juhi Desai</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">About</a>
+        <a href="../experiences.html">Experiences</a>
+        <a href="../projects.html">Projects</a>
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Juhi Desai.</span>
+      <span>Designed &amp; developed with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

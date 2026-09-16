@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel — Juhi Desai</title>
+<meta name="description" content="A running journal of places worth remembering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,480;0,9..144,560;0,9..144,600;1,9..144,480&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <span class="mono">JD</span>
+      <span class="brand-name">Juhi Desai</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">About</a>
+      <a href="../experiences.html">Experiences</a>
+      <a href="../projects.html" class="is-active">Projects</a>
+      <a href="mailto:your.email@example.com" class="nav-contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="cs-hero">
+    <div class="container">
+      <a href="../index.html" class="back-link">&larr; Back to About</a>
+      <span class="cs-tag">Journal &middot; Ongoing</span>
+      <h1 class="mt-3">Travel</h1>
+      <p class="lede mt-2">A running collection of places I&rsquo;ve been and things worth remembering.</p>
+    </div>
+  </div>
+
+  <section class="cs-section" style="border-bottom:none;">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">About This Page</div>
+      <div class="cs-section-body">
+        <p class="lede">This is a work in progress&mdash;I&rsquo;m adding trips, photos, and notes here over time rather than all at once.</p>
+
+        <div class="grid grid-3 mt-6">
+          <div class="recipe-card">
+            <div class="card-media"><div class="media-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg><span>Add a trip</span></div></div>
+            <div class="card-body"><h4>A trip, coming soon</h4></div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-media"><div class="media-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg><span>Add a trip</span></div></div>
+            <div class="card-body"><h4>A trip, coming soon</h4></div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-media"><div class="media-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg><span>Add a trip</span></div></div>
+            <div class="card-body"><h4>A trip, coming soon</h4></div>
+          </div>
+        </div>
+
+        <p class="mt-6 text-muted" style="font-size:0.85rem;">To fill this in: duplicate one of the cards above, swap the placeholder for a real photo, and give it a title and a line or two about the trip.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section" style="border-bottom:none;">
+    <div class="container text-center">
+      <a href="../index.html" class="link-arrow">← Back to About</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="brand"><span class="mono">JD</span><span class="brand-name">Juhi Desai</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">About</a>
+        <a href="../experiences.html">Experiences</a>
+        <a href="../projects.html">Projects</a>
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Juhi Desai.</span>
+      <span>Designed &amp; developed with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

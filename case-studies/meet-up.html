@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Maps: Getting Everyone There Together — Juhi Desai</title>
+<meta name="description" content="A product exploration: what if Google Maps treated the meetup, not the individual trip, as the unit of coordination?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,480;0,9..144,560;0,9..144,600;1,9..144,480&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <span class="mono">JD</span>
+      <span class="brand-name">Juhi Desai</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">About</a>
+      <a href="../experiences.html">Experiences</a>
+      <a href="../projects.html" class="is-active">Projects</a>
+      <a href="mailto:your.email@example.com" class="nav-contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="cs-hero">
+    <div class="container">
+      <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+      <span class="cs-tag concept">Product Exploration / Concept</span>
+      <h1 class="mt-3">Google Maps: Getting Everyone There Together</h1>
+      <p class="lede mt-2">An independent product exploration. Not a claim about what Maps currently lacks, and not a claim that Google is building this.</p>
+      <div class="cs-meta-row">
+        <span class="cs-meta">Product framing</span>
+        <span class="cs-meta">Research-driven reframe</span>
+        <span class="cs-meta">Concept only</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FRAMEWORK STRIP -->
+  <section class="cs-section" style="padding-bottom: var(--space-5);">
+    <div class="container">
+      <div class="framework-row">
+        <div class="framework-item"><div class="fi-label">Assumption</div></div>
+        <div class="framework-item"><div class="fi-label">Research</div></div>
+        <div class="framework-item"><div class="fi-label">Discovery</div></div>
+        <div class="framework-item"><div class="fi-label">Reframe</div></div>
+        <div class="framework-item"><div class="fi-label">Concept</div></div>
+        <div class="framework-item"><div class="fi-label">Tradeoffs</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INITIAL ASSUMPTION -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Initial Assumption</div>
+      <div class="cs-section-body">
+        <h2>Maps gets you there. It doesn&rsquo;t get all of you there.</h2>
+        <p class="lede">My favorite Google product is Google Maps&mdash;it solves a concrete problem at exactly the moment you need it. But when I&rsquo;m meeting friends somewhere, Maps gets me there; coordinating everyone else still happens in a group text.</p>
+        <p>My starting assumption was that Maps was missing a way to see where your friends are relative to a shared destination, and that this was the gap worth designing for.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="cs-section bg-alt">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Research</div>
+      <div class="cs-section-body">
+        <h2>Checking the assumption against the actual product</h2>
+        <p>Before designing anything, I looked at what Maps already does. Current Maps already supports:</p>
+        <ul class="mvp-list">
+          <li>Location sharing</li>
+          <li>Trip progress sharing</li>
+          <li>ETA sharing</li>
+          <li>Location-sharing notifications</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOVERY -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Discovery</div>
+      <div class="cs-section-body">
+        <h2>My assumption was wrong</h2>
+        <p class="pull-quote">The visibility problem was already solved. What wasn&rsquo;t there was any sense of the group as a group.</p>
+        <p>Each of those features is built around one person sharing one trip with one other person. There&rsquo;s no shared destination, no shared target time, and no view of whether everyone is actually going to arrive together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFRAMED PROBLEM -->
+  <section class="cs-section bg-alt">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Reframed Problem</div>
+      <div class="cs-section-body">
+        <h2>The unit of coordination is wrong</h2>
+        <p class="pull-quote">What if Maps treated the meetup&mdash;rather than each person&rsquo;s individual trip&mdash;as the unit of coordination?</p>
+        <p>That reframing is the actual idea. Not &ldquo;add location sharing&rdquo; (it exists), but &ldquo;give a group a shared object to coordinate around.&rdquo;</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPT -->
+  <section class="cs-section">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Concept</div>
+      <div class="cs-section-body">
+        <h2>Meetup Mode</h2>
+        <p>Create a meetup &rarr; invite people &rarr; everyone joins &rarr; Maps coordinates the group&rsquo;s arrival.</p>
+        <p class="mt-3">Potential product behaviors:</p>
+        <ul>
+          <li>Show everyone&rsquo;s ETA against the shared target time, in one place</li>
+          <li>Identify when someone may be running late</li>
+          <li>Suggest coordinated departure times so the group actually arrives together</li>
+          <li>Notify the group when plans need to adjust</li>
+        </ul>
+
+        <div class="meetup-mock mt-5" style="max-width: 380px;">
+          <div class="mm-head">
+            <div class="mm-title">Dinner &middot; 7:00 PM</div>
+            <div class="mm-sub">State Bird Provisions</div>
+          </div>
+          <div class="mm-list">
+            <div class="mm-row"><span class="mm-name">Juhi</span><span class="mm-time">6:48</span></div>
+            <div class="mm-row mm-late"><span class="mm-name">Sarah</span><span class="mm-time">7:12</span></div>
+            <div class="mm-row"><span class="mm-name">Maya</span><span class="mm-time">6:57</span></div>
+            <div class="mm-row"><span class="mm-name">Alex</span><span class="mm-time">7:05</span></div>
+          </div>
+          <div class="mm-foot">Concept mockup &middot; Meetup Mode, illustrative only</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRADEOFFS / EDGE CASES -->
+  <section class="cs-section bg-alt">
+    <div class="container cs-section-inner">
+      <div class="cs-section-label">Tradeoffs &amp; Edge Cases</div>
+      <div class="cs-section-body">
+        <h2>What gets harder, not just what gets better</h2>
+        <ul>
+          <li><strong>Privacy:</strong> joining a meetup means sharing your live location with the whole group, not just one person&mdash;the consent model needs to be clearer, not just easier.</li>
+          <li><strong>Partial participation:</strong> what happens when one person in the group won&rsquo;t share location? The group view has to degrade gracefully, not break.</li>
+          <li><strong>Notification fatigue:</strong> &ldquo;Sarah is running late&rdquo; is useful once; it&rsquo;s noise if it fires every time an ETA shifts by a minute.</li>
+          <li><strong>Battery impact:</strong> continuous location sharing across a whole group is more expensive than one-to-one sharing today.</li>
+          <li><strong>When it ends:</strong> sharing needs to be scoped tightly to the meetup itself, with an obvious, automatic stop&mdash;not another setting people forget to turn off.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section" style="border-bottom:none;">
+    <div class="container text-center">
+      <a href="../projects.html" class="link-arrow">← Back to Projects</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="brand"><span class="mono">JD</span><span class="brand-name">Juhi Desai</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">About</a>
+        <a href="../experiences.html">Experiences</a>
+        <a href="../projects.html">Projects</a>
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Juhi Desai.</span>
+      <span>Designed &amp; developed with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
