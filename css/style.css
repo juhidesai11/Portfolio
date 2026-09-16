@@ -1332,7 +1332,7 @@ img.portrait-photo {
 }
 @media (max-width: 640px) {
   .exp-header { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
-  .exp-meta-col { align-self: flex-end; margin-top: -1.6rem; }
+  .exp-meta-col { align-self: stretch; justify-content: space-between; margin-top: 0.2rem; }
 }
 
 /* ==========================================================================
