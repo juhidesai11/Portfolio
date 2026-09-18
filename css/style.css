@@ -607,6 +607,21 @@ section { padding: var(--space-8) 0; }
   margin-bottom: 0.4rem;
 }
 .step-item p { font-size: 0.92rem; }
+@media (min-width: 901px) { .step-list.cols-3 { grid-template-columns: repeat(3, 1fr); } }
+
+/* Large editorial image moment — real screenshots at natural aspect ratio, no forced crop */
+.cs-media-wide {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.cs-media-wide img { width: 100%; height: auto; display: block; }
+.cs-media-cap { font-size: 0.82rem; color: var(--ink-muted); margin-top: 0.6rem; }
+.cs-media-sm { max-width: 420px; }
+
+/* Vertical motif variant */
+.motif.vertical { flex-direction: column; align-items: center; }
 
 /* ---------- Case study layout ---------- */
 .cs-hero {
@@ -684,6 +699,14 @@ section { padding: var(--space-8) 0; }
 }
 .cs-section-body > * + * { margin-top: var(--space-3); }
 .cs-section-body h2 { margin-bottom: var(--space-2); }
+
+/* Compact case-study layout — dense, single-column, modeled on the Experiences page */
+.cs-section.compact { padding: var(--space-4) 0; }
+.cs-section.compact .cs-section-inner { display: block; }
+.cs-section.compact .cs-section-label { position: static; margin-bottom: 0.4rem; }
+.cs-section.compact .cs-section-body h2 { font-size: clamp(1.1rem, 1.7vw, 1.35rem); margin-bottom: 0.35rem; }
+.cs-section.compact .cs-section-body > * + * { margin-top: 0.5rem; }
+.cs-section.compact .lede { font-size: 0.92rem; line-height: 1.55; }
 .cs-section-body ul { margin-top: var(--space-2); }
 .cs-section-body li {
   position: relative;
@@ -708,33 +731,6 @@ section { padding: var(--space-8) 0; }
   border-left: 3px solid var(--accent-blue);
   padding-left: var(--space-4);
   margin: var(--space-3) 0;
-}
-
-/* Philosophy moment: a quiet, marginal note — deliberately lighter than .pull-quote */
-.philosophy-note { padding: var(--space-4) 0; }
-.philosophy-line {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 480;
-  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
-  line-height: 1.45;
-  color: var(--ink-soft);
-  letter-spacing: 0.01em;
-  max-width: 30ch;
-  margin-left: auto;
-  text-align: right;
-  padding-right: var(--space-3);
-  border-right: 2px solid var(--olive);
-}
-@media (max-width: 640px) {
-  .philosophy-line {
-    margin-left: 0;
-    text-align: left;
-    border-right: none;
-    border-left: 2px solid var(--olive);
-    padding-left: var(--space-3);
-    padding-right: 0;
-  }
 }
 
 /* Chat mock (Billing Assistant) */
@@ -1202,63 +1198,51 @@ img.portrait-photo {
 }
 
 /* ==========================================================================
-   BEYOND THE PRODUCT — photography-led personality rows (About page)
+   ABOUT — single editorial composition (headline + portrait + bio + photos)
    ========================================================================== */
-.beyond-rows { display: flex; flex-direction: column; }
-.beyond-row {
+.about-compose { padding: var(--space-6) 0 var(--space-7); }
+.about-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: var(--space-6);
   align-items: center;
-  padding: var(--space-7) 0;
-  border-top: 1px solid var(--border);
 }
-.beyond-row:last-child { padding-bottom: 0; }
-.beyond-row.flip .beyond-photo { order: 2; }
-@media (max-width: 780px) {
-  .beyond-row, .beyond-row.flip { grid-template-columns: 1fr; gap: var(--space-4); }
-  .beyond-row.flip .beyond-photo { order: 0; }
+@media (max-width: 700px) {
+  .about-grid { grid-template-columns: 1fr; gap: var(--space-6); }
 }
-.beyond-photo {
-  aspect-ratio: 4/3;
-  overflow: hidden;
-  border-radius: var(--radius-sm);
+.about-grid h1 {
+  max-width: 16ch;
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  margin-top: var(--space-2);
 }
-.beyond-photo img { width: 100%; height: 100%; object-fit: cover; }
-.beyond-index {
+.about-bio { margin-top: var(--space-4); max-width: 46ch; }
+.about-bio p { font-size: 0.96rem; line-height: 1.6; color: var(--ink-soft); }
+.about-bio p + p { margin-top: 0.8rem; }
+.about-closing {
+  display: inline-block;
+  margin-top: var(--space-5);
   font-family: var(--font-display);
-  font-size: 0.85rem;
-  color: var(--ink-muted);
-  margin-bottom: 0.5rem;
-  display: block;
+  font-style: italic;
+  font-weight: 480;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  border-left: 2px solid var(--olive);
+  padding-left: var(--space-3);
 }
-.beyond-text h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); margin-bottom: 0.8rem; }
-.beyond-text p { max-width: 46ch; }
-
-/* Feature variant — Sailing gets more visual weight than the rest */
-.beyond-row.feature {
-  grid-template-columns: 1fr;
-  gap: var(--space-5);
+.about-image-col { display: flex; flex-direction: column; gap: var(--space-4); align-items: center; }
+@media (max-width: 700px) { .about-image-col { align-items: flex-start; } }
+.about-photo-pair { display: flex; gap: var(--space-3); width: 100%; max-width: 460px; }
+.about-photo-pair img {
+  flex: 1 1 0%;
+  min-width: 0;
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 5px solid var(--surface);
+  box-shadow: 0 10px 24px -14px rgba(38,36,32,0.3);
 }
-.beyond-row.feature .beyond-photo {
-  aspect-ratio: 21/9;
-  order: 0;
-}
-.beyond-row.feature .beyond-text h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
-.beyond-row.feature .beyond-text p,
-.beyond-row.feature .beyond-text .pull-quote { max-width: 60ch; }
-@media (max-width: 780px) {
-  .beyond-row.feature .beyond-photo { aspect-ratio: 4/3; }
-}
-
-/* Photo-grid variant — two smaller frames instead of one (Cooking) */
-.beyond-photo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-2);
-  aspect-ratio: 4/3;
-}
-.beyond-photo-grid .media-placeholder { min-height: 100%; }
 
 /* ==========================================================================
    EXPERIENCES — expandable editorial timeline with size hierarchy
@@ -1323,7 +1307,7 @@ img.portrait-photo {
 .edu-card { padding-top: var(--space-2); }
 .edu-head {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-3);
   margin-bottom: var(--space-5);
 }
@@ -1560,9 +1544,22 @@ img.portrait-photo {
 .mt-4 { margin-top: var(--space-4); }
 .mt-5 { margin-top: var(--space-5); }
 .mt-6 { margin-top: var(--space-6); }
+.mt-7 { margin-top: var(--space-7); }
 .text-center { text-align: center; }
 .center-head { max-width: 640px; margin: 0 auto; text-align: center; }
 .visually-hidden {
   position: absolute; width: 1px; height: 1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap;
 }
+
+/* Screenshot gallery with one-line captions */
+.cs-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+.cs-gallery-item { border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; background: var(--surface); }
+.cs-gallery-item img { width: 100%; height: auto; display: block; }
+.cs-gallery-cap { font-size: 0.78rem; color: var(--ink-muted); padding: 0.5rem 0.7rem; border-top: 1px solid var(--border); }
+@media (max-width: 640px) { .cs-gallery { grid-template-columns: 1fr; } }
+
