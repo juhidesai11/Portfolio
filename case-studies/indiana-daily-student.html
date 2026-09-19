@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Indiana Daily Student — Juhi Desai</title>
-<meta name="description" content="Two interactive digital features co-designed and co-developed at the Indiana Daily Student.">
+<meta name="description" content="Designing for the transition from print to digital: two interactive editorial experiences co-designed and co-developed at the Indiana Daily Student.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,480;0,9..144,560;0,9..144,600;1,9..144,480&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style.css?v=5">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -33,25 +33,59 @@
 <main id="main">
 
   <!-- ============ HERO ============ -->
-  <section class="ids-hero">
+  <section class="ids-hero" style="padding: 0.75rem 0 0.6rem;">
     <div class="container">
       <a href="../projects.html" class="ids-back reveal">&larr; Back to Projects</a>
 
-      <div class="reveal" style="margin-top: var(--space-4);">
-        <span class="ids-eyebrow">Indiana Daily Student</span>
-        <h1>Designing digital stories people actually read.</h1>
-        <p class="ids-hero-copy">I co-designed and co-developed two interactive editorial experiences inside an existing publication system &mdash; making independent UX decisions around scroll, pacing, imagery, and responsive behavior.</p>
+      <div class="reveal" style="margin-top: 0.6rem;">
+        <span class="ids-eyebrow">Editorial Web Design <span class="ids-eyebrow-sep">/</span> Indiana Daily Student</span>
+        <h1 style="font-size: clamp(2.3rem, 4.6vw, 3.5rem); max-width: 34ch; color: var(--navy);">Designing for the transition<br>from print to digital.</h1>
+        <p class="ids-hero-lede">As the Indiana Daily Student increasingly relied on digital publishing, the challenge wasn&rsquo;t simply putting journalism online. We needed to make long-form stories engaging and intuitive for readers experiencing them on a screen, including readers accustomed to the print newspaper.</p>
+        <p class="ids-hero-lede">I co-designed and co-developed two interactive editorial experiences inside an existing publication template, adapting the same technical system to two very different stories.</p>
 
-        <div class="ids-metrics">
-          <div class="ids-metric"><span class="num">2</span><span class="label">Interactive stories</span></div>
-          <div class="ids-metric"><span class="num">10K+</span><span class="label">Monthly readers</span></div>
-          <div class="ids-metric"><span class="num">HTML / CSS / JS</span><span class="label">Built with</span></div>
+        <div class="ids-metaline">
+          <span>2 interactive features</span><span class="sep">&middot;</span>
+          <span>HTML / CSS / JavaScript</span><span class="sep">&middot;</span>
+          <span>10K+ monthly readers</span>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="ids-hero-media reveal">
-        <img src="../assets/images/everybody-deserves-cover.jpg" alt="Published Indiana Daily Student feature, &lsquo;Everybody deserves to get clean,&rsquo; showing the headline over a porch photograph">
-        <p class="ids-hero-cap">&lsquo;Everybody Deserves to Get Clean,&rsquo; as published on IDS Specials.</p>
+  <hr class="ids-rule">
+
+  <!-- ============ THE CHALLENGE ============ -->
+  <section class="ids-block">
+    <div class="container">
+      <div class="ids-challenge-row reveal">
+        <div>
+          <span class="ids-eyebrow">The Challenge</span>
+          <h2 style="margin-top: 0.3rem; font-size: clamp(1.4rem, 2.2vw, 1.7rem); color: var(--navy);">How do you make a newspaper work on a screen?</h2>
+          <p style="margin-top: 0.7rem; max-width: 60ch;">The publication already had a technical framework for digital stories. That meant I wasn&rsquo;t starting with a blank canvas. I had to work within an existing system while thinking about reader experience, from scroll flow and image/text pacing to responsive behavior and story-specific UX.</p>
+          <p class="ids-pullquote">The interesting constraint was that both stories needed to live within the same publication system, but they shouldn&rsquo;t feel like the same experience.</p>
+        </div>
+
+        <div>
+          <span class="ids-consider-label">Key Design Considerations</span>
+          <div class="ids-consider-list">
+            <div class="ids-consider-item">
+              <span class="num">01</span>
+              <div><h5>Scroll flow</h5><p>How the story unfolds as someone moves down the page.</p></div>
+            </div>
+            <div class="ids-consider-item">
+              <span class="num">02</span>
+              <div><h5>Image + text pacing</h5><p>When visuals should interrupt, support, or give space to the narrative.</p></div>
+            </div>
+            <div class="ids-consider-item">
+              <span class="num">03</span>
+              <div><h5>Responsive behavior</h5><p>How the experience changes across screen sizes.</p></div>
+            </div>
+            <div class="ids-consider-item">
+              <span class="num">04</span>
+              <div><h5>Story-specific UX</h5><p>What needed to change depending on the story being told.</p></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -59,41 +93,119 @@
   <hr class="ids-rule">
 
   <!-- ============ THE STORIES ============ -->
-  <section>
-    <div class="container ids-stories-head">
-      <span class="ids-eyebrow reveal">The Stories</span>
-    </div>
-
+  <section class="ids-block">
     <div class="container">
-      <div class="magazine-spread reveal">
-        <div class="magazine-media">
-          <img src="../assets/images/fractured-but-unbroken-screenshot.jpeg" alt="Screenshot of the published IDS story, &lsquo;Fractured but unbroken,&rsquo; showing a rider on a white horse in a creek" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-        <div>
-          <span class="ids-index">01</span>
-          <h2>Fractured but Unbroken</h2>
-          <p class="pull-quote-lg mt-3">An interactive feature exploring the story of Luna, a former plowhorse who became a therapy horse helping children at Children&rsquo;s TherAplay.</p>
-          <p class="mt-4"><a href="fractured-but-unbroken.html" class="link-arrow">Explore story <span class="arrow">&rarr;</span></a></p>
-        </div>
-      </div>
+      <span class="ids-eyebrow reveal">The Stories</span>
+      <p class="ids-lede-line reveal">Two stories. Two different emotional journeys. One shared system.</p>
 
-      <div class="magazine-spread reveal" style="border-bottom: none;">
-        <div class="magazine-media">
-          <img src="../assets/images/everybody-deserves-screenshot.jpeg" alt="Screenshot of the published IDS story, &lsquo;Everybody deserves to get clean,&rsquo; showing the headline over a porch photo" style="width:100%;height:100%;object-fit:cover;">
+      <a href="https://specials.idsnews.com/fractured-but-unbroken/index.html" class="ids-feature reveal" target="_blank" rel="noopener" aria-label="Read the story: Fractured but Unbroken, Luna's story (opens the live story in a new tab)">
+        <div class="ids-feature-media" style="aspect-ratio: 16/8;">
+          <img src="../assets/images/fractured-but-unbroken-desktop.png" alt="Published Indiana Daily Student feature, Fractured but Unbroken, showing a rider on a white horse crossing a creek" style="aspect-ratio: 16/8;">
         </div>
-        <div>
-          <span class="ids-index">02</span>
+        <div class="ids-feature-text">
+          <span class="ids-feature-num">01</span>
+          <h2>Fractured but Unbroken</h2>
+          <p class="ids-feature-sub">Luna&rsquo;s story</p>
+          <p class="ids-feature-desc">A former plowhorse becomes a therapy horse helping children at Children&rsquo;s TherAplay.</p>
+          <div class="ids-feature-question">
+            <span class="q-label">The Design Question</span>
+            <p>How can the digital experience create space for a visual, emotional story without overwhelming the reader?</p>
+          </div>
+          <span class="ids-feature-cta">Read the story <span class="arrow">&rarr;</span></span>
+        </div>
+      </a>
+
+      <a href="https://specials.idsnews.com/because-everybody-deserves-to-get-clean/" class="ids-feature reverse reveal" target="_blank" rel="noopener" aria-label="Read the story: Everybody Deserves to Get Clean, a journey through addiction and recovery (opens the live story in a new tab)" style="border-bottom: none;">
+        <div class="ids-feature-media" style="aspect-ratio: 16/8;">
+          <img src="../assets/images/everybody-deserves-cover.jpg" alt="Published Indiana Daily Student feature, Everybody Deserves to Get Clean, showing the headline over a porch photograph" style="aspect-ratio: 16/8;">
+        </div>
+        <div class="ids-feature-text">
+          <span class="ids-feature-num">02</span>
           <h2>&ldquo;Everybody Deserves to Get Clean&rdquo;</h2>
-          <p class="pull-quote-lg mt-3">A long-form story following one Bloomington woman&rsquo;s journey through addiction and recovery.</p>
-          <p class="mt-4"><a href="everybody-deserves-to-get-clean.html" class="link-arrow">Explore story <span class="arrow">&rarr;</span></a></p>
+          <p class="ids-feature-sub">A journey through addiction and recovery</p>
+          <p class="ids-feature-desc">A long-form story following one Bloomington woman&rsquo;s journey through addiction and recovery.</p>
+          <div class="ids-feature-question">
+            <span class="q-label">The Design Question</span>
+            <p>How can the experience guide a reader through a complex, deeply personal narrative while maintaining a clear reading flow?</p>
+          </div>
+          <span class="ids-feature-cta">Read the story <span class="arrow">&rarr;</span></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <hr class="ids-rule">
+
+  <!-- ============ WHAT I ACTUALLY DESIGNED ============ -->
+  <section class="ids-block">
+    <div class="container">
+      <span class="ids-eyebrow reveal">What I Actually Designed</span>
+      <p class="ids-statement reveal">Turning a publication template into a reader experience.</p>
+
+      <div class="ids-principles-grid reveal">
+        <div class="ids-principle">
+          <span class="num">01</span>
+          <h4>Structure</h4>
+          <p>Worked within the existing publication framework.</p>
+        </div>
+        <div class="ids-principle">
+          <span class="num">02</span>
+          <h4>Interaction</h4>
+          <p>Used HTML, CSS, and JavaScript to shape how readers moved through each story.</p>
+        </div>
+        <div class="ids-principle">
+          <span class="num">03</span>
+          <h4>Visual Rhythm</h4>
+          <p>Made decisions around image placement, text density, spacing, and scroll progression.</p>
+        </div>
+        <div class="ids-principle">
+          <span class="num">04</span>
+          <h4>Adaptation</h4>
+          <p>Adjusted the experience around the needs of each individual story rather than forcing both into the same layout.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: var(--space-6) 0;">
-    <div class="container text-center">
-      <a href="../projects.html" class="link-arrow reveal">&larr; Back to Projects</a>
+  <hr class="ids-rule">
+
+  <!-- ============ MY ROLE ============ -->
+  <section class="ids-block">
+    <div class="container ids-role-row">
+      <div class="reveal">
+        <span class="ids-eyebrow">My Role</span>
+        <p class="ids-statement">Co-designed + co-developed.</p>
+      </div>
+      <ul class="ids-role-list reveal">
+        <li>Worked with editors and designers to translate editorial content into interactive digital experiences</li>
+        <li>Made independent UX and implementation decisions within the publication&rsquo;s technical constraints</li>
+        <li>Built with HTML, CSS, and JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="ids-rule">
+
+  <!-- ============ BIGGER PICTURE + CTA ============ -->
+  <section class="ids-block" style="border-bottom: none;">
+    <div class="container ids-closing-row">
+      <div class="reveal">
+        <span class="ids-eyebrow">The Bigger Picture</span>
+        <p class="ids-statement">Publishing content isn&rsquo;t the same as designing the experience around it.</p>
+        <p>That experience taught me that the underlying system can stay consistent, while the experience on top of it changes depending on the user and the content.</p>
+        <p>One of my earliest experiences thinking about the difference between delivering information and designing how someone experiences it.</p>
+      </div>
+
+      <div class="reveal">
+        <span class="ids-eyebrow">See the Work as a Reader</span>
+        <p class="ids-statement" style="font-size: clamp(1.2rem, 2.2vw, 1.6rem);">Explore the original Indiana Daily Student experiences.</p>
+
+        <span class="ids-eyebrow" style="display: block; margin-top: 1rem;">View the Live Stories</span>
+        <div class="ids-live-links">
+          <a href="https://specials.idsnews.com/fractured-but-unbroken/index.html" class="ids-live-link" target="_blank" rel="noopener">Fractured but Unbroken <span class="arrow">&#8599;</span></a>
+          <a href="https://specials.idsnews.com/because-everybody-deserves-to-get-clean/" class="ids-live-link" target="_blank" rel="noopener">&ldquo;Everybody Deserves to Get Clean&rdquo; <span class="arrow">&#8599;</span></a>
+        </div>
+      </div>
     </div>
   </section>
 

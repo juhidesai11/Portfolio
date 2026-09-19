@@ -2040,3 +2040,123 @@ img.portrait-photo {
   .ids-metric { padding-right: var(--space-4); }
 }
 
+/* ---- Indiana Daily Student HUB page only (indiana-daily-student.html) ----
+   New components below are additive: nothing above this point is modified,
+   so fractured-but-unbroken.html and everybody-deserves-to-get-clean.html
+   (which reuse .ids-back, .ids-eyebrow, .ids-hero-media, .ids-beat*, etc.)
+   render exactly as before. */
+.ids-hero-lede { font-size: 0.98rem; color: var(--ink-soft); max-width: 72ch; margin-top: 0.6rem; line-height: 1.55; }
+
+.ids-metaline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; margin-top: 0.85rem; font-size: 0.85rem; color: var(--ink-muted); }
+.ids-metaline .sep { color: var(--border-strong); }
+
+.ids-lede-line { font-family: var(--font-display); font-style: italic; font-size: clamp(1.05rem, 1.8vw, 1.3rem); color: var(--ink-soft); margin-top: 0.5rem; max-width: 44ch; }
+.ids-eyebrow-sep { opacity: 0.45; margin: 0 0.35em; }
+.ids-statement {
+  font-family: var(--font-display); font-weight: 500; font-style: normal;
+  font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.28; color: var(--ink);
+  margin-top: 0.6rem; max-width: 46ch;
+}
+
+/* Story feature — large asymmetric, whole block clickable */
+.ids-block { padding: 0.9rem 0; }
+.ids-feature {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: var(--space-5);
+  align-items: end;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+}
+.ids-feature.reverse { grid-template-columns: 1fr 1.7fr; }
+.ids-feature.reverse .ids-feature-media { order: 2; }
+.ids-feature.reverse .ids-feature-text { order: 1; }
+@media (max-width: 860px) {
+  .ids-feature, .ids-feature.reverse { grid-template-columns: 1fr; gap: var(--space-4); }
+  .ids-feature.reverse .ids-feature-media, .ids-feature.reverse .ids-feature-text { order: 0; }
+}
+.ids-feature-media { overflow: hidden; border-radius: var(--radius-sm); }
+.ids-feature-media img {
+  width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 4/5;
+  transition: transform var(--dur-slow) var(--ease);
+}
+.ids-feature:hover .ids-feature-media img { transform: scale(1.035); }
+.ids-feature-num { font-family: var(--font-display); font-size: 1rem; color: var(--navy); display: block; }
+.ids-feature-text h2 {
+  font-family: var(--font-display); font-weight: 500; text-transform: uppercase; letter-spacing: 0.01em;
+  font-size: clamp(1.3rem, 2.4vw, 1.8rem); margin-top: 0.3rem; line-height: 1.1; color: var(--navy);
+}
+.ids-feature-sub { font-family: var(--font-display); font-style: italic; font-size: 0.98rem; color: var(--ink-soft); margin-top: 0.3rem; }
+.ids-feature-desc { font-size: 0.9rem; color: var(--ink-soft); margin-top: 0.5rem; max-width: 40ch; line-height: 1.5; }
+.ids-feature-cta { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.85rem; font-weight: 600; font-size: 0.92rem; color: var(--ink); }
+.ids-feature-cta .arrow { transition: transform var(--dur-fast) var(--ease); display: inline-block; }
+.ids-feature:hover .ids-feature-cta .arrow { transform: translateX(5px); }
+.ids-feature:focus-visible { outline: 2px solid var(--accent-blue-deep); outline-offset: 6px; border-radius: 4px; }
+
+/* Designing inside constraints — quiet 4-up */
+.ids-principles-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5); margin-top: 1.25rem; }
+@media (max-width: 860px) { .ids-principles-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .ids-principles-grid { grid-template-columns: 1fr; } }
+.ids-principle { border-left: 1px solid var(--border); padding-left: var(--space-4); }
+.ids-principle:first-child { border-left: none; padding-left: 0; }
+@media (max-width: 860px) { .ids-principle { border-left: none; padding-left: 0; } }
+.ids-principle .num { font-family: var(--font-display); font-size: 0.85rem; color: var(--ink-muted); }
+.ids-principle h4 { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; margin-top: 0.45rem; color: var(--ink); }
+.ids-principle p { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.4rem; line-height: 1.5; }
+
+/* My Role — two-column editorial split */
+.ids-role-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+@media (max-width: 780px) { .ids-role-row { grid-template-columns: 1fr; gap: 1rem; } }
+.ids-role-row .ids-role-list { margin-top: 0.3rem; max-width: 46ch; }
+
+/* Live work CTA */
+.ids-live-links { display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; margin-top: 0.6rem; }
+.ids-hero-lede + .ids-hero-lede { margin-top: 0.35rem; }
+
+/* The Challenge — main copy + sidebar considerations */
+.ids-challenge-row { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; margin-top: 0; align-items: start; }
+@media (max-width: 860px) { .ids-challenge-row { grid-template-columns: 1fr; gap: 1.5rem; } }
+.ids-pullquote {
+  font-family: var(--font-display); font-style: italic; font-weight: 460;
+  font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.45; color: var(--navy);
+  border-left: 2px solid var(--navy); padding-left: var(--space-4);
+  margin-top: 0.85rem; max-width: 52ch;
+}
+.ids-consider-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.5rem; display: block; }
+.ids-consider-list { display: flex; flex-direction: column; gap: 0.85rem; }
+.ids-consider-item {
+  display: grid; grid-template-columns: 22px 1fr; gap: 0.5rem; align-items: baseline;
+}
+.ids-consider-item .num { font-family: var(--font-display); font-size: 0.78rem; color: var(--navy); }
+.ids-consider-item h5 { margin: 0; font-size: 0.86rem; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--navy); }
+.ids-consider-item p { font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.05rem; line-height: 1.25; }
+
+/* Design question inline within a story feature */
+.ids-feature-question { margin-top: 0.6rem; }
+.ids-feature-question .q-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); display: block; margin-bottom: 0.3rem; }
+.ids-feature-question p { font-family: var(--font-display); font-style: italic; font-size: 0.92rem; color: var(--navy); line-height: 1.5; max-width: 40ch; }
+
+/* Closing row — bigger picture + CTA side by side */
+.ids-closing-row { display: grid; grid-template-columns: 1.2fr 1fr; gap: var(--space-6); align-items: start; }
+@media (max-width: 860px) { .ids-closing-row { grid-template-columns: 1fr; gap: 1.5rem; } }
+.ids-closing-row p { font-size: 0.92rem; color: var(--ink-soft); margin-top: 0.7rem; max-width: 46ch; line-height: 1.6; }
+.ids-next-mini { margin-top: 1.1rem; display: block; }
+.ids-live-link {
+  font-family: var(--font-display); font-size: clamp(1.25rem, 2.6vw, 1.8rem); color: var(--ink);
+  display: inline-flex; align-items: center; gap: 0.5rem; width: fit-content;
+  transition: color var(--dur-fast) var(--ease);
+}
+.ids-live-link .arrow { transition: transform var(--dur-fast) var(--ease); display: inline-block; }
+.ids-live-link:hover { color: var(--navy-soft); }
+.ids-live-link:hover .arrow { transform: translate(3px, -3px); }
+
+/* Next project band */
+.ids-next { display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); padding: var(--space-6) 0; border-top: 1px solid var(--border); text-decoration: none; color: inherit; }
+.ids-next .eyebrow-sm { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); }
+.ids-next .title { font-family: var(--font-display); font-size: clamp(1.3rem, 2.6vw, 1.9rem); color: var(--ink); margin-top: 0.3rem; }
+.ids-next .arrow-lg { font-size: 1.4rem; color: var(--ink-muted); transition: transform var(--dur-fast) var(--ease); flex-shrink: 0; }
+.ids-next:hover .arrow-lg { transform: translateX(6px); }
+@media (max-width: 560px) { .ids-next { flex-direction: column; align-items: flex-start; gap: 0.5rem; } }
+
