@@ -31,69 +31,297 @@
 </header>
 
 <main id="main">
-  <div class="cs-hero">
+
+  <!-- ============ 01 — HERO ============ -->
+  <section class="wfa-hero wfa-section">
     <div class="container">
-      <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
-      <span class="cs-tag">AI Product</span>
-      <h1 class="mt-3">AI Workflow Assistants</h1>
-      <p class="lede mt-2">Three Custom GPTs &middot; PwC</p>
-      <div class="cs-meta-row">
-        <span class="cs-meta">Custom GPT</span>
-        <span class="cs-meta">Documentation-grounded</span>
-        <span class="cs-meta">Firm-wide use</span>
+      <a href="../projects.html" class="wfa-back reveal">&larr; Back to Projects</a>
+
+      <div class="wfa-hero-head reveal">
+        <span class="wfa-eyebrow">Product Case Study</span>
+        <h1>AI Workflow Assistants</h1>
+        <p class="wfa-hero-sub">Turning scattered documentation into usable tools.</p>
+        <div class="wfa-tags">
+          <span class="wfa-tag">0&rarr;1 product</span>
+          <span class="wfa-tag">User problem</span>
+          <span class="wfa-tag">AI workflow</span>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <section class="cs-section compact">
-    <div class="container cs-section-inner">
-      <div class="cs-section-label">What I Built</div>
-      <div class="cs-section-body">
-        <h2>Three assistants, one approach</h2>
-        <p>PwC consultants were working with large amounts of scattered documentation: billing FAQs, an internal acronym reference, and onboarding materials. I built three Custom GPTs, each grounded in the right source documents, tested, and iterated on. Not a model I trained, not a backend I built.</p>
-        <ul class="mt-2">
-          <li><strong>SAP S/4HANA Billing Assistant</strong> &mdash; step-by-step billing guidance</li>
-          <li><strong>PwC Acronym Finder</strong> &mdash; fast lookup for internal acronyms</li>
-          <li><strong>PwC New Joiner Guide</strong> &mdash; onboarding help in a supportive tone</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      <div class="wfa-hero-visual reveal">
+        <div class="wfa-annotation left">
+          Grounded in source docs
+          <span class="wfa-annotation-line"></span>
+          <p>Trained on firm project billing guides, FAQs and real examples to ensure accurate, up-to-date responses.</p>
+        </div>
 
-  <div class="container">
-    <div class="cs-media-wide" style="max-width: 560px;">
-      <img src="../assets/images/billing-assistant-live.png" alt="Live landing screen of the S/4HANA Billing Assistant Custom GPT">
-    </div>
-  </div>
+        <div class="wfa-app">
+          <div class="wfa-app-sidebar">
+            <div class="wfa-app-brand"><span class="spark">&#10022;</span> SAP Billing Assistant</div>
+            <div class="wfa-app-nav-item active">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+              New Chat
+            </div>
+            <div class="wfa-app-nav-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+              Examples
+            </div>
+            <div class="wfa-app-nav-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V6a2 2 0 0 1 2-2h8l6 6v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/></svg>
+              Resources
+            </div>
+            <div class="wfa-app-nav-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 0 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 0 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34H9a1.7 1.7 0 0 0 1-1.55V3a2 2 0 0 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87V9a1.7 1.7 0 0 0 1.55 1H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1Z"/></svg>
+              Settings
+            </div>
+          </div>
+          <div class="wfa-app-main">
+            <div class="wfa-app-greeting">
+              <span class="spark">&#10022;</span>
+              <div>
+                <h3>Hi! I&rsquo;m your SAP Billing Assistant.</h3>
+                <p>Ask me anything about project billing, fixed price, milestone, or monthly billing using our latest firm documentation.</p>
+              </div>
+            </div>
+            <div class="wfa-app-suggestions">
+              <span class="wfa-app-suggestion">How do I create a fixed price invoice?</span>
+              <span class="wfa-app-suggestion">What&rsquo;s the process for milestone billing?</span>
+              <span class="wfa-app-suggestion">Show me a screenshot-based next step</span>
+              <span class="wfa-app-suggestion">Where can I find the billing FAQ?</span>
+            </div>
+            <div class="wfa-app-inputbar">
+              <span>Ask a question&hellip;</span>
+              <span class="wfa-app-send">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7Z"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
 
-  <section class="cs-section compact bg-alt mt-5">
-    <div class="container cs-section-inner">
-      <div class="cs-section-label">The Lesson</div>
-      <div class="cs-section-body">
-        <h2>The model wasn&rsquo;t the variable. The structure was.</h2>
-        <p>The Acronym Finder took four rounds to get right: a website, then a CSV, then one big Word doc &mdash; all with poor retrieval. What finally worked was splitting the same information into four smaller, alphabetized documents (A&ndash;F, G&ndash;L, M&ndash;R, S&ndash;Z).</p>
-        <div class="cs-media-wide cs-media-sm mt-3">
-          <img src="../assets/images/acronym-finder-config.png" alt="The Acronym Finder's actual knowledge base: four documents named A-F, G-L, M-R, and S-Z Acronyms">
+        <div class="wfa-annotation right">
+          <span class="wfa-annotation-line"></span>
+          Designed around real user questions
+          <p>Prompt suggestions reflect actual questions from the team, reducing friction and time to value.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cs-section compact">
-    <div class="container cs-section-inner">
-      <div class="cs-section-label">Impact</div>
-      <div class="cs-section-body">
-        <h2>Used across teams, made firm-wide</h2>
-        <p>All three were adopted by consultants across multiple teams, made available firm-wide, and incorporated into onboarding &mdash; part of a broader set of AI workflow initiatives that, together, reduced 400+ hours of manual effort.</p>
+  <!-- ============ 02 — PRODUCT THINKING PROCESS ============ -->
+  <section class="wfa-section">
+    <div class="container">
+      <div class="wfa-process-strip reveal">
+        <div class="wfa-process-item">
+          <span class="num-circle">01</span>
+          <h4>Problem</h4>
+          <p>Scattered, outdated documentation made it hard for users to find the right information.</p>
+        </div>
+        <div class="wfa-process-arrow">&rarr;</div>
+        <div class="wfa-process-item">
+          <span class="num-circle">02</span>
+          <h4>Users</h4>
+          <p>PwC users across billing, project delivery, and client teams.</p>
+        </div>
+        <div class="wfa-process-arrow">&rarr;</div>
+        <div class="wfa-process-item">
+          <span class="num-circle">03</span>
+          <h4>Insight</h4>
+          <p>Users didn&rsquo;t need more docs. They needed quick, accurate answers in their flow of work.</p>
+        </div>
+        <div class="wfa-process-arrow">&rarr;</div>
+        <div class="wfa-process-item">
+          <span class="num-circle">04</span>
+          <h4>Solution</h4>
+          <p>Custom AI assistants grounded in source docs, with natural language and guided prompts.</p>
+        </div>
+        <div class="wfa-process-arrow">&rarr;</div>
+        <div class="wfa-process-item">
+          <span class="num-circle">05</span>
+          <h4>Iteration</h4>
+          <p>Refined prompts, added screenshot guidance, improved retrieval after initial failures during testing.</p>
+        </div>
+        <div class="wfa-process-arrow">&rarr;</div>
+        <div class="wfa-process-item">
+          <span class="num-circle">06</span>
+          <h4>Impact</h4>
+          <p>Reduced manual effort, streamlined workflows, and increased self-service adoption.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="cs-section compact" style="border-bottom:none;">
-    <div class="container text-center">
-      <a href="../projects.html" class="link-arrow">← Back to Projects</a>
+  <!-- ============ 03 — WHAT CHANGED ============ -->
+  <section class="wfa-section">
+    <div class="container">
+      <h2 class="reveal">What changed</h2>
+
+      <div class="wfa-change-cols reveal">
+        <div class="wfa-change-col">
+          <span class="cap">Before</span>
+          <h3>Manual, fragmented process</h3>
+          <div class="wfa-files-mock">
+            <div class="wfa-file-list">
+              <div class="wfa-file-chip"><span class="wfa-file-icon pdf">PDF</span> Billing Guide.pdf</div>
+              <div class="wfa-file-chip"><span class="wfa-file-icon doc">DOC</span> FAQ.docx</div>
+              <div class="wfa-file-chip"><span class="wfa-file-icon xls">XLS</span> Examples.xlsx</div>
+              <div class="wfa-file-chip"><span class="wfa-file-icon wiki">W</span> Internal Wiki</div>
+            </div>
+            <div class="wfa-doc-preview">
+              <div class="title">Project Billing Guide</div>
+              <div class="wfa-doc-line"></div>
+              <div class="wfa-doc-line"></div>
+              <div class="wfa-doc-line"></div>
+              <div class="wfa-doc-line"></div>
+              <div class="wfa-doc-line"></div>
+            </div>
+          </div>
+          <ul class="wfa-change-notes">
+            <li>Multiple documents and channels</li>
+            <li>Hard to search and connect information</li>
+            <li>Slower resolution for users</li>
+          </ul>
+        </div>
+
+        <div class="wfa-change-col">
+          <span class="cap">After</span>
+          <h3>One AI assistant, all the answers</h3>
+          <div class="wfa-app is-compact is-change">
+            <div class="wfa-app-sidebar">
+              <div class="wfa-app-brand"><span class="spark">&#10022;</span> SAP Billing Assistant</div>
+              <div class="wfa-app-nav-item active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+                New Chat
+              </div>
+              <div class="wfa-app-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+                Examples
+              </div>
+              <div class="wfa-app-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V6a2 2 0 0 1 2-2h8l6 6v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/></svg>
+                Resources
+              </div>
+              <div class="wfa-app-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 0 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 0 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34H9a1.7 1.7 0 0 0 1-1.55V3a2 2 0 0 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87V9a1.7 1.7 0 0 0 1.55 1H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1Z"/></svg>
+                Settings
+              </div>
+            </div>
+            <div class="wfa-app-main">
+              <div class="wfa-chat-msg user">How do I create a fixed price invoice?</div>
+              <div class="wfa-chat-msg bot">
+                Here&rsquo;s the step-by-step process for creating a fixed price invoice&hellip;
+                <div class="wfa-chat-source">&#128196; Billing_Guide.pdf</div>
+              </div>
+              <div class="wfa-app-inputbar">
+                <span>Ask a follow up&hellip;</span>
+                <span class="wfa-app-send">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7Z"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <ul class="wfa-change-notes">
+            <li>Single, searchable interface</li>
+            <li>Answers with source references</li>
+            <li>Faster, more confident execution</li>
+          </ul>
+        </div>
+
+        <div class="wfa-change-metric">
+          <div class="num">400+</div>
+          <p class="txt">hours of manual effort reduced across AI workflow initiatives</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- ============ 04 — WHY THIS DECISION ============ -->
+  <section class="wfa-section">
+    <div class="container">
+      <h2 class="reveal">Why this decision?</h2>
+
+      <div class="wfa-decision-cards reveal">
+        <div class="wfa-decision-card">
+          <span class="cap">Alternative</span>
+          <h3>Build a general-purpose GPT</h3>
+          <p class="desc">Could have used a standard GPT with custom instructions and uploads.</p>
+          <div class="wfa-decision-divider"></div>
+          <span class="why-label">Why not</span>
+          <p class="why">Wouldn&rsquo;t be grounded in our firm docs, would lack accuracy and consistent context. Users would have to look for the source documents every time they wanted to find answers.</p>
+        </div>
+        <div class="wfa-decision-card">
+          <span class="cap">Alternative</span>
+          <h3>Build a static knowledge base</h3>
+          <p class="desc">Could have created a searchable wiki or documentation site.</p>
+          <div class="wfa-decision-divider"></div>
+          <span class="why-label">Why not</span>
+          <p class="why">Would require manual searching, wouldn&rsquo;t support natural language, and wouldn&rsquo;t adapt to evolving questions.</p>
+        </div>
+        <div class="wfa-decision-card">
+          <span class="cap">The decision</span>
+          <h3>Build custom AI assistants</h3>
+          <p class="desc">Grounded in source docs, designed around real user questions, and iterated based on feedback and retrieval performance.</p>
+          <div class="wfa-decision-divider"></div>
+          <span class="why-label">Why</span>
+          <p class="why">Best balance of accuracy, usability and scalability, and met users where they actually work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 — OUTCOME ============ -->
+  <section class="wfa-section">
+    <div class="container">
+      <h2 class="reveal">Outcome</h2>
+      <div class="wfa-outcome-row reveal">
+        <p class="lede">Deployed AI assistants used by PwC and clients, reducing 400+ hours of manual effort across AI workflow initiatives and helping teams get to the right information, faster.</p>
+        <a href="#gallery" class="wfa-outcome-btn">View the product <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 — PROJECT GALLERY ============ -->
+  <section class="wfa-section" id="gallery">
+    <div class="container">
+      <h2 class="reveal">Project Gallery</h2>
+      <p class="lede reveal" style="margin-top:0.5rem;">Behind the build</p>
+
+      <div class="wfa-collage reveal">
+        <div class="wfa-collage-item wfa-collage-a">
+          <img src="../assets/images/billing-assistant-live.png" alt="Live landing screen of the S/4HANA Billing Assistant Custom GPT">
+          <div class="cap"><span class="tag">Live Product</span><span class="name">SAP S/4HANA Billing Assistant</span></div>
+        </div>
+        <div class="wfa-collage-item wfa-collage-b">
+          <img src="../assets/images/billing-assistant-config.jpg" alt="Knowledge base configuration for the Billing Assistant Custom GPT">
+          <div class="cap"><span class="tag">Configuration</span><span class="name">SAP S/4HANA Billing Assistant</span></div>
+        </div>
+        <div class="wfa-collage-item wfa-collage-c">
+          <img src="../assets/images/acronym-finder-live.png" alt="Live landing screen of the PwC Acronym Finder Custom GPT">
+          <div class="cap"><span class="tag">Live Product</span><span class="name">PwC Acronym Finder</span></div>
+        </div>
+        <div class="wfa-collage-item wfa-collage-d">
+          <img src="../assets/images/acronym-finder-config.png" alt="The Acronym Finder's knowledge base: four documents named A-F, G-L, M-R, and S-Z Acronyms" style="object-position: top;">
+          <div class="cap"><span class="tag">Configuration</span><span class="name">PwC Acronym Finder</span></div>
+        </div>
+        <div class="wfa-collage-item wfa-collage-e">
+          <img src="../assets/images/new-joiner-guide-live.png" alt="Live landing screen of the PwC New Joiner Guide Custom GPT">
+          <div class="cap"><span class="tag">Live Product</span><span class="name">PwC New Joiner Guide</span></div>
+        </div>
+        <div class="wfa-collage-item wfa-collage-f">
+          <img src="../assets/images/new-joiner-guide-config.png" alt="Knowledge base configuration for the New Joiner Guide Custom GPT" style="object-position: top;">
+          <div class="cap"><span class="tag">Configuration</span><span class="name">PwC New Joiner Guide</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wfa-section" style="border-bottom:none; padding-top: var(--space-6);">
+    <div class="container text-center">
+      <a href="../projects.html" class="link-arrow reveal">
+        <span class="arrow">&larr;</span> Back to Projects
+      </a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
