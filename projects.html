@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,480;0,9..144,560;0,9..144,600;1,9..144,480&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=pj4">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -31,231 +31,79 @@
 </header>
 
 <main id="main">
-  <section class="page-intro" style="padding-bottom: var(--space-4);">
+
+  <section class="pj-intro">
     <div class="container">
-      <p class="eyebrow reveal">Projects</p>
-      <h1 class="reveal">Things I&rsquo;ve actually built.</h1>
-      <p class="lede reveal">A mix of shipped work and independent concepts: editorial web design, AI tools built on top of documentation rather than models, a personal product, and two product-thinking exercises.</p>
+      <span class="pj-kicker reveal">Selected Work</span>
+      <h1 class="reveal">Projects</h1>
     </div>
   </section>
 
-  <section style="padding-top: 0;">
+  <section class="pj-work">
     <div class="container">
-
-      <!-- 01 — PWC AI WORKFLOW ASSISTANTS (index group) -->
-      <div class="proj-entry reveal">
-        <div class="proj-eyebrow-row">
-          <span class="proj-num">01</span>
-          <span class="eyebrow">AI Workflow Assistants &middot; PwC</span>
+      <div class="pj-grid">
+      <a href="case-studies/ai-workflow-assistants.html" class="pj-card reveal">
+        <div class="pj-media"><img src="assets/images/billing-assistant-live.png" alt="Screenshot of the S/4HANA Billing Assistant Custom GPT" style="object-position:center top;" loading="lazy"></div>
+        <div class="pj-body">
+          <span class="pj-eyebrow">AI <span class="sl">/</span> Productivity</span>
+          <h2>AI Workflow Assistants</h2>
+          <p>Three Custom GPTs shaped with documentation, instructions, and testing to make information easier to find.</p>
+          <span class="pj-cta">View project <svg class="pj-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg></span>
         </div>
-        <h2 style="max-width: 22ch;">Three tools built to make information easier to find</h2>
-        <p class="lede mt-2">Each of these is a Custom GPT, shaped with supplied documentation, instructions, examples, and testing. Not a model I trained or a backend I built.</p>
-
-        <div class="motif mt-5" aria-label="Process: Problem, Build, Test, Iterate, Impact">
-          <span class="motif-step">Problem</span><span class="motif-arrow">&rarr;</span>
-          <span class="motif-step">Build</span><span class="motif-arrow">&rarr;</span>
-          <span class="motif-step">Test</span><span class="motif-arrow">&rarr;</span>
-          <span class="motif-step">Iterate</span><span class="motif-arrow">&rarr;</span>
-          <span class="motif-step">Impact</span>
+      </a>
+      <a href="case-studies/ai-adoption.html" class="pj-card reveal">
+        <div class="pj-media"><img src="assets/images/ai-adoption-program.png" alt="Slide from the AI build-off kickoff, Why today matters" style="object-position:center;" loading="lazy"></div>
+        <div class="pj-body">
+          <span class="pj-eyebrow">AI <span class="sl">/</span> Adoption</span>
+          <h2>AI Adoption Program</h2>
+          <p>Trained 30+ PwC professionals to build with AI through hands-on workshops, practical use cases, and a case competition.</p>
+          <span class="pj-cta">View project <svg class="pj-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg></span>
         </div>
-
-        <div class="proj-index-list">
-          <div class="proj-index-item">
-            <div>
-              <div class="pi-title">SAP S/4HANA Billing Assistant</div>
-              <p class="pi-desc">Turned hundreds of pages of billing documentation and FAQs into contextual, step-by-step guidance for consultants.</p>
-            </div>
-            <a href="case-studies/billing-assistant.html" class="link-arrow pi-link">View <span class="arrow">→</span></a>
-          </div>
-          <div class="proj-index-item">
-            <div>
-              <div class="pi-title">PwC Acronym Finder</div>
-              <p class="pi-desc">Four rounds of restructuring the same information before retrieval actually worked. The lesson was information architecture, not the model.</p>
-            </div>
-            <a href="case-studies/acronym-finder.html" class="link-arrow pi-link">View <span class="arrow">→</span></a>
-          </div>
-          <div class="proj-index-item">
-            <div>
-              <div class="pi-title">PwC New Joiner Guide</div>
-              <p class="pi-desc">Built from onboarding training materials, tuned to answer in a tone that actually fits a new employee&rsquo;s first weeks.</p>
-            </div>
-            <a href="case-studies/new-joiner-guide.html" class="link-arrow pi-link">View <span class="arrow">→</span></a>
-          </div>
+      </a>
+      <a href="case-studies/uat-dashboard.html" class="pj-card reveal">
+        <div class="pj-media"><div class="pj-uat" aria-hidden="true"><span class="c s"></span><span class="c s"></span><span class="c t"></span><span class="c n"></span><span class="c s"></span><span class="c d"></span><span class="c n"></span><span class="c t"></span><span class="c s"></span><span class="c s"></span><span class="c n"></span><span class="c t"></span><span class="c s"></span><span class="c n"></span><span class="c s"></span><span class="c t"></span></div></div>
+        <div class="pj-body">
+          <span class="pj-eyebrow">Oracle Cloud <span class="sl">/</span> PwC</span>
+          <h2>UAT Dashboard</h2>
+          <p>Built a Jira/Xray workflow and dashboard to organize UAT testing by ownership, workstream, module, and status, giving the team a real-time view of progress and exceptions.</p>
+          <span class="pj-cta">View project <svg class="pj-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg></span>
         </div>
-        <p class="mt-4"><a href="case-studies/ai-workflow-assistants.html" class="link-arrow">Read the full case study <span class="arrow">→</span></a></p>
+      </a>
+      <a href="case-studies/indiana-daily-student.html" class="pj-card reveal">
+        <div class="pj-media"><img src="assets/images/everybody-deserves-cover.jpg" alt="Published Indiana Daily Student feature, Everybody Deserves to Get Clean" style="object-position:center 22%;" loading="lazy"></div>
+        <div class="pj-body">
+          <span class="pj-eyebrow">Media <span class="sl">/</span> Student Newsroom</span>
+          <h2>Indiana Daily Student</h2>
+          <p>Two interactive editorial features, co-designed and co-developed inside an existing publication template.</p>
+          <span class="pj-cta">View project <svg class="pj-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg></span>
+        </div>
+      </a>
       </div>
 
-      <!-- 02 — TEACHING AI AT PWC (compact) -->
-      <div class="proj-entry reveal">
-        <div class="proj-eyebrow-row">
-          <span class="proj-num">02</span>
-          <span class="eyebrow">Teaching &amp; Adoption &middot; PwC</span>
+      <div class="pj-concepts">
+        <div class="pj-concepts-head reveal">
+          <span class="pj-kicker">Concepts</span>
+          <span class="pj-concepts-note">Exploring ideas at the intersection of technology, people, and everyday life.</span>
         </div>
-        <h2 style="max-width: 22ch;">Teaching 30+ professionals to build with AI</h2>
-        <p class="lede mt-2">Knowing AI exists isn&rsquo;t the same as knowing how to use it well.</p>
-        <p class="mt-3" style="max-width: 62ch;">I trained 30+ PwC professionals across levels, designed hands-on workshops with practical use cases, coached people through their own use cases, and built an AI case competition to push the learning further. It was recognized with PwC&rsquo;s [A]mplify [I]mpact AI Award, selected from 100+ nominations.</p>
-
-        <div class="motif mt-5" aria-label="Process: Learn, Practice, Apply, Reinforce">
-          <span class="motif-step">Learn</span><span class="motif-arrow">&rarr;</span>
-          <span class="motif-step">Practice</span><span class="motif-arrow">&rarr;</span>
-          <span class="motif-step">Apply</span><span class="motif-arrow">&rarr;</span>
-          <span class="motif-step">Reinforce</span>
-        </div>
-        <p class="mt-4"><a href="case-studies/ai-adoption.html" class="link-arrow">Read the full story <span class="arrow">→</span></a></p>
-      </div>
-
-      <!-- 03 — UAT TESTING DASHBOARD (split, dashboard mock) -->
-      <div class="proj-entry reveal">
-        <div class="proj-eyebrow-row">
-          <span class="proj-num">03</span>
-          <span class="eyebrow">Project Tooling &middot; PwC &middot; Oracle Cloud Implementation</span>
-        </div>
-        <h2 style="max-width: 20ch;">UAT Testing Dashboard</h2>
-        <p class="lede mt-2">Turning testing activity into a clearer view of project progress.</p>
-
-        <div class="proj-split">
-          <div>
-            <p class="mt-2">UAT generated a large amount of testing activity and issues across workstreams. The team needed a clearer way to understand progress and identify what needed attention.</p>
-            <p class="mt-3">I structured and tracked UAT activity in Jira-based dashboards, monitoring testing progress and outstanding issues, and using that view in project status discussions to help turn detailed testing activity into an easier-to-read picture of where things stood.</p>
-            <p class="pull-quote mt-4">Testing progress &rarr; visibility &rarr; decision making.</p>
-            <p class="mt-4"><a href="case-studies/uat-dashboard.html" class="link-arrow">Read the full case study <span class="arrow">→</span></a></p>
+        <div class="pj-concept-grid">
+        <a href="case-studies/meet-up.html" class="pj-concept reveal">
+          <div class="pj-concept-text">
+            <h3>Google Maps: Getting Everyone There Together</h3>
+            <p>A concept that treats the meetup, not each person&rsquo;s trip, as the unit of coordination.</p>
+            <span class="pj-cta">View concept <svg class="pj-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg></span>
           </div>
-          <div>
-            <div class="uat-mock">
-              <div class="um-head">
-                <div class="um-title">UAT Overview</div>
-                <div class="um-sub">Portfolio representation &middot; sanitized for external viewing</div>
-              </div>
-              <div class="um-rows">
-                <div class="um-row on-track">
-                  <div class="um-row-top"><span class="um-name">Workstream A</span><span class="um-status on-track">On Track</span></div>
-                  <div class="um-track"><div class="um-fill" style="width:82%;"></div></div>
-                </div>
-                <div class="um-row on-track">
-                  <div class="um-row-top"><span class="um-name">Workstream B</span><span class="um-status on-track">On Track</span></div>
-                  <div class="um-track"><div class="um-fill" style="width:68%;"></div></div>
-                </div>
-                <div class="um-row at-risk">
-                  <div class="um-row-top"><span class="um-name">Workstream C</span><span class="um-status at-risk">At Risk</span></div>
-                  <div class="um-track"><div class="um-fill" style="width:41%;"></div></div>
-                </div>
-              </div>
-              <div class="um-foot">Fictional sample data &middot; not actual PwC or client project figures</div>
-            </div>
+          <div class="pj-concept-media"><svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g stroke="var(--border)" stroke-width="1.2" fill="none"><path d="M0 40h200M0 95h200M0 140h200M40 0v160M105 0v160M165 0v160M0 20L200 120M60 0L200 70"/></g><circle cx="100" cy="82" r="24" fill="var(--navy-pale)"/><circle cx="100" cy="82" r="6" fill="var(--navy-soft)"/></svg></div>
+        </a>
+        <a href="case-studies/verified-crew.html" class="pj-concept reveal">
+          <div class="pj-concept-text">
+            <h3>Verified Crew</h3>
+            <p>A concept for helping people feel safer joining a sailing crew of strangers.</p>
+            <span class="pj-cta">View concept <svg class="pj-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg></span>
           </div>
+          <div class="pj-concept-media"><svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="160" fill="var(--bg-alt)"/><g fill="none" stroke="var(--navy-soft)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M100 30v58" stroke-width="1.4"/><path d="M100 34l34 46H100z" fill="var(--navy-pale)"/><path d="M96 46L66 84h30z" fill="var(--surface)"/><path d="M52 98h96l-10 22H64z" fill="var(--surface)"/><path d="M40 132c14 6 24 6 40 0s26-6 40 0 26 6 40 0" stroke="var(--border-strong)"/></g><circle cx="152" cy="40" r="14" fill="var(--olive)"/><path d="M145.5 40.5l4.5 4.5 8-9" fill="none" stroke="var(--surface)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </a>
         </div>
       </div>
-
-      <!-- 04 — INDIANA DAILY STUDENT (feature) -->
-      <div class="proj-entry reveal">
-        <div class="proj-eyebrow-row">
-          <span class="proj-num">04</span>
-          <span class="eyebrow">Editorial Web Design</span>
-        </div>
-        <h2 style="max-width: 20ch;">Indiana Daily Student</h2>
-        <p class="lede mt-2">Two interactive editorial features, designed and built inside an existing publication template.</p>
-
-        <div class="proj-feature-media mt-5">
-          <img src="assets/images/everybody-deserves-cover.jpg" alt="Screenshot of the published IDS story, &lsquo;Everybody deserves to get clean,&rsquo; one of the two IDS features">
-        </div>
-
-        <div class="grid grid-2 mt-5" style="gap: var(--space-6);">
-          <p>I designed and built two responsive multimedia web experiences with HTML, CSS, and JavaScript, working inside an existing publication template rather than from a blank canvas, customizing layout, content hierarchy, and media placement for long-form features that reached 10,000+ monthly readers.</p>
-          <p>The real work was in the constraints: structuring scroll flow, pacing images against text, and making responsive decisions that held up on both desktop and mobile, while adapting one shared template into two distinct reader experiences for two sensitive, narrative-driven stories.</p>
-        </div>
-        <p class="mt-4"><a href="case-studies/indiana-daily-student.html" class="link-arrow">Read the case study <span class="arrow">→</span></a></p>
-      </div>
-
-      <!-- 05 — FROM JUHI'S KITCHEN (warm) -->
-      <div class="proj-entry reveal">
-        <div class="proj-eyebrow-row">
-          <span class="proj-num">05</span>
-          <span class="eyebrow">Personal Product</span>
-        </div>
-        <h2 style="max-width: 20ch;">From Juhi&rsquo;s Kitchen</h2>
-
-        <div class="proj-warm mt-5">
-          <div class="grid grid-2" style="gap: var(--space-6); align-items: center;">
-            <div class="media-placeholder" style="aspect-ratio:4/3; border-radius: var(--radius-sm); min-height: 240px;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12a8 8 0 0116 0z"/><path d="M4 12h16M9 3v3M15 3v3"/></svg>
-              <span>Add food photography</span>
-            </div>
-            <div>
-              <p class="lede">I built a Wix site so friends and family could actually cook my recipes, instead of texting me for them every time.</p>
-              <p class="mt-3">Nothing complicated. Just easy, cute, visual, and useful. It&rsquo;s a small example of the same instinct behind everything else here: notice a repeated, everyday friction point, then just build the thing that removes it.</p>
-              <p class="mt-4"><a href="case-studies/juhis-kitchen.html" class="link-arrow">See the recipes <span class="arrow">→</span></a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 06 — VERIFIED CREW (split) -->
-      <div class="proj-entry reveal">
-        <div class="proj-eyebrow-row">
-          <span class="proj-num">06</span>
-          <span class="eyebrow">Product Exploration / Concept</span>
-        </div>
-        <h2 style="max-width: 20ch;">Verified Crew</h2>
-
-        <div class="proj-split">
-          <div>
-            <p class="lede">How might a sailing platform help people feel safer joining a boat with a crew of strangers?</p>
-            <p class="mt-4">I have personal experience sailing, so I understand this trust problem from a user&rsquo;s side: deciding whether to get on a boat with people I don&rsquo;t know, and evaluating crew joining a boat I was on. <strong>Verified Crew</strong> is a concept for a verification layer on top of a crew-matching platform, not a feature that exists today.</p>
-            <p class="mt-4"><a href="case-studies/verified-crew.html" class="link-arrow">Read the full concept <span class="arrow">→</span></a></p>
-          </div>
-          <div>
-            <div class="trust-card">
-              <div class="trust-head">
-                <div class="trust-avatar">JD</div>
-                <div>
-                  <div class="trust-name">Sample Crew Profile</div>
-                  <div class="trust-sub">Concept mockup, illustrative only</div>
-                </div>
-              </div>
-              <div class="trust-badges">
-                <div class="trust-badge-row"><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>Identity verified</div>
-                <div class="trust-badge-row"><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>Sailing certification on file</div>
-                <div class="trust-badge-row"><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>3 references</div>
-              </div>
-              <div class="trust-foot">Portfolio representation &middot; fictional example content</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 07 — GOOGLE MAPS CONCEPT (split) -->
-      <div class="proj-entry reveal">
-        <div class="proj-eyebrow-row">
-          <span class="proj-num">07</span>
-          <span class="eyebrow">Product Exploration / Concept</span>
-        </div>
-        <h2 style="max-width: 22ch;">Google Maps: getting everyone there together</h2>
-
-        <div class="proj-split">
-          <div>
-            <p class="lede">When I&rsquo;m meeting friends somewhere, Maps gets me there. Getting all of us there together, at the same time, still means a group text.</p>
-            <p class="mt-4">Current Maps already supports live location sharing, trip progress sharing, ETA sharing, and location-sharing notifications. So the interesting question isn&rsquo;t whether people can see each other. It&rsquo;s this:</p>
-            <p class="pull-quote mt-3">What if Maps treated the meetup, not each person&rsquo;s individual trip, as the unit of coordination?</p>
-            <p class="mt-4"><a href="case-studies/meet-up.html" class="link-arrow">Read the full exploration <span class="arrow">→</span></a></p>
-          </div>
-          <div>
-            <div class="meetup-mock">
-              <div class="mm-head">
-                <div class="mm-title">Dinner &middot; 7:00 PM</div>
-                <div class="mm-sub">State Bird Provisions</div>
-              </div>
-              <div class="mm-list">
-                <div class="mm-row"><span class="mm-name">Juhi</span><span class="mm-time">6:48</span></div>
-                <div class="mm-row mm-late"><span class="mm-name">Sarah</span><span class="mm-time">7:12</span></div>
-                <div class="mm-row"><span class="mm-name">Maya</span><span class="mm-time">6:57</span></div>
-                <div class="mm-row"><span class="mm-name">Alex</span><span class="mm-time">7:05</span></div>
-              </div>
-              <div class="mm-foot">Concept mockup &middot; Meetup Mode, illustrative only</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 </main>
@@ -270,8 +118,8 @@
         <a href="index.html">About</a>
         <a href="experiences.html">Experiences</a>
         <a href="projects.html">Projects</a>
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="https://www.linkedin.com/in/juhidesai11" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:juhdesai@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/juhidesai11/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="footer-bottom">
