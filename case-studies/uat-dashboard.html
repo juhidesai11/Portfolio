@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,480;0,9..144,560;0,9..144,600;1,9..144,480&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css?v=ud7">
+<link rel="stylesheet" href="../css/style.css?v=ud8">
 </head>
 <body class="ud-page">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -36,122 +36,149 @@
   <section class="ud-hero">
     <div class="container">
       <a href="../projects.html" class="ud-back">&larr; Back to Projects</a>
-      <div class="ud-hero-grid">
-        <div>
-          <span class="ud-eyebrow">Project Tooling <span class="ud-sep">/</span> Oracle Cloud Implementation <span class="ud-sep">/</span> PwC</span>
-          <h1 class="ud-h1">UAT Dashboard</h1>
-          <p class="ud-sub">Making testing progress easier to see.</p>
-          <p class="ud-lede">During an Oracle Cloud implementation, I built a Jira/Xray workflow and dashboard that organized UAT testing by ownership, workstream, module, and status, giving the team a real-time view of progress and exceptions.</p>
-          <p class="ud-metaline">Jira + Xray<span class="sep">&middot;</span>UAT<span class="sep">&middot;</span>Oracle Cloud</p>
-        </div>
-        <div class="ud-hero-visual" aria-hidden="true">
-          <p>Clearer information<br>for better decisions.</p>
-          <span class="rule"></span>
-        </div>
+      <span class="ud-eyebrow" style="margin-top: 0.9rem;">Client Project</span>
+      <h1 class="ud-h1">UAT Dashboard</h1>
+      <p class="ud-sub">Making testing progress easier to track during an Oracle Cloud implementation.</p>
+      <div class="ud-metrics">
+        <div><span class="v">Jira + Xray</span><span class="l">testing tools</span></div>
+        <div><span class="v">Live</span><span class="l">team dashboard</span></div>
+        <div><span class="v">Daily</span><span class="l">UAT touchpoints</span></div>
+        <div><span class="v">Oracle Cloud</span><span class="l">implementation</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ THE PROBLEM ============ -->
+  <!-- ============ PROBLEM | WHAT I BUILT ============ -->
   <section class="ud-sec">
     <div class="container">
-      <div class="ud-two">
-        <div class="reveal">
+      <div class="ud-ps reveal">
+        <div class="ud-ps-col">
           <span class="ud-eyebrow">The Problem</span>
-          <h2 class="ud-h2">Testing was happening.<br>Visibility wasn&rsquo;t.</h2>
+          <h2>Testing was spread across many test cases, multiple workstreams, and different owners.</h2>
+          <p>The team needed a quick way to see what was complete, what was still outstanding, where defects were open, and who owned the remaining tests.</p>
         </div>
-        <p class="ud-side-lede reveal">UAT involved multiple workstreams and testers working through a large set of test scripts. Before daily touchpoints, the team needed to quickly answer:</p>
+        <div class="ud-ps-col">
+          <span class="ud-eyebrow">What I Built</span>
+          <p class="ud-ps-built">I structured the existing Xray test scripts by workstream, owner, module, and status, then built filters and a live Jira dashboard for the team to track UAT.</p>
+        </div>
       </div>
-      <ul class="ud-qs reveal">
-          <li class="ud-q"><svg class="ud-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg><h3>What&rsquo;s done?</h3><p>Successful tests</p></li>
-          <li class="ud-q"><svg class="ud-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke-dasharray="2.2 2.6"/></svg><h3>What&rsquo;s left?</h3><p>Not started / outstanding tests</p></li>
-          <li class="ud-q"><svg class="ud-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4.5M12 17.2v.1"/></svg><h3>What&rsquo;s broken?</h3><p>Defects</p></li>
-          <li class="ud-q"><svg class="ud-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5"/><rect x="13.5" y="4" width="6.5" height="6.5"/><rect x="4" y="13.5" width="6.5" height="6.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5"/></svg><h3>Where?</h3><p>Module / workstream</p></li>
-          <li class="ud-q"><svg class="ud-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9.5" r="2.4"/><path d="M17.5 14c2.2.3 3.5 2 3.5 4.5"/></svg><h3>Who owns it?</h3><p>Tester / owner</p></li>
-          </ul>
     </div>
   </section>
 
-  <!-- ============ THE SOLUTION ============ -->
+  <!-- ============ FLOW ============ -->
   <section class="ud-sec">
     <div class="container">
-      <div class="ud-solution">
-        <div class="reveal">
-          <span class="ud-eyebrow">The Solution</span>
-          <h2 class="ud-h2">A simple workflow<br>for a complex process.</h2>
-          <p class="ud-side-lede" style="margin-top: 0.9rem;">I structured the existing Jira/Xray setup to give the team a clear, real-time view of UAT progress.</p>
-          <ol class="ud-steps">
-            <li><span class="n">01</span>Organized test scripts by module and workstream</li>
-            <li><span class="n">02</span>Assigned test cases to testers</li>
-            <li><span class="n">03</span>Standardized testing statuses</li>
-            <li><span class="n">04</span>Created filters and built a live Jira dashboard</li>
-            <li><span class="n">05</span>Used the dashboard in daily UAT touchpoints</li>
-          </ol>
-        </div>
+      <span class="ud-eyebrow reveal">From Test Scripts to Live Reporting</span>
+      <p class="ud-lede reveal">Turning Xray test scripts into a live view of UAT progress.</p>
+      <ol class="ud-flow reveal">
+        <li><span class="n">01</span><h3>Test scripts</h3><p>Existing Xray test scripts</p></li>
+        <li><span class="n">02</span><h3>Structure</h3><p>Module &middot; Workstream &middot; Tester</p></li>
+        <li><span class="n">03</span><h3>Track</h3><p>Not Started &middot; Tested &middot; Successful &middot; Defects</p></li>
+        <li><span class="n">04</span><h3>Filter</h3><p>Workstream &middot; Owner &middot; Module &middot; Status</p></li>
+        <li><span class="n">05</span><h3>Live dashboard</h3><p>UAT progress and defects</p></li>
+      </ol>
+    </div>
+  </section>
 
-        <figure class="ud-figure reveal" aria-labelledby="ud-cap">
-          <div class="ud-laptop">
-            <div class="ud-screen">
-              <div class="ud-dash-title">UAT Testing</div>
-              <div class="ud-stats">
-                <div class="ud-stat nsg"><span class="k">Not Started</span><span class="v">XX</span></div>
-                <div class="ud-stat tst"><span class="k">Tested</span><span class="v">XX</span></div>
-                <div class="ud-stat suc"><span class="k">Successful</span><span class="v">XX</span></div>
-                <div class="ud-stat def"><span class="k">Defects</span><span class="v">XX</span></div>
+  <!-- ============ THE DASHBOARD ============ -->
+  <section class="ud-sec">
+    <div class="container">
+      <span class="ud-eyebrow reveal">The Dashboard</span>
+      <p class="ud-lede reveal">A consolidated view of testing progress, defects, and ownership.</p>
+
+      <figure class="ud-dash reveal" aria-labelledby="ud-cap">
+        <div class="ud-flag"><span>Conceptual recreation</span><span>Placeholder values &middot; not client data</span></div>
+        <div class="ud-dash-head">
+          <span class="t">UAT Testing Dashboard</span>
+          <span class="sel">UAT Cycle &nbsp;All <b aria-hidden="true">&#9662;</b></span>
+        </div>
+        <div class="ud-dash-body">
+          <ul class="ud-side" aria-hidden="true">
+            <li class="on">Overview</li><li>Test Execution</li><li>Defects</li><li>Workstreams</li><li>Test Cases</li><li>Team</li><li>Reports</li>
+          </ul>
+          <div class="ud-main">
+            <div class="ud-kpis">
+              <div><span class="v">XX</span><span class="k">Total test cases</span></div>
+              <div><span class="v">XX%</span><span class="k">Executed</span></div>
+              <div><span class="v">XX</span><span class="k">Open defects</span></div>
+              <div><span class="v">XX</span><span class="k">Workstreams</span></div>
+            </div>
+            <div class="ud-filters">
+              <div><span class="fk">Workstream</span><span class="fv">All <b aria-hidden="true">&#9662;</b></span></div>
+              <div><span class="fk">Module</span><span class="fv">All <b aria-hidden="true">&#9662;</b></span></div>
+              <div><span class="fk">Owner</span><span class="fv">All <b aria-hidden="true">&#9662;</b></span></div>
+              <div><span class="fk">Status</span><span class="fv">All <b aria-hidden="true">&#9662;</b></span></div>
+            </div>
+            <div class="ud-panels">
+              <div class="ud-panel">
+                <h4>Test Execution Status</h4>
+                <div class="ud-donut-row">
+                  <svg viewBox="0 0 100 100" class="ud-donut" role="img" aria-label="Illustrative donut chart of test statuses">
+                    <g fill="none" stroke-width="14" transform="rotate(-90 50 50)">
+                      <circle cx="50" cy="50" r="38" stroke="var(--ud-ok)" stroke-dasharray="131 239" stroke-dashoffset="0"/>
+                      <circle cx="50" cy="50" r="38" stroke="var(--ud-tested)" stroke-dasharray="48 239" stroke-dashoffset="-131"/>
+                      <circle cx="50" cy="50" r="38" stroke="var(--ud-bad)" stroke-dasharray="24 239" stroke-dashoffset="-179"/>
+                      <circle cx="50" cy="50" r="38" stroke="var(--ud-todo)" stroke-dasharray="36 239" stroke-dashoffset="-203"/>
+                    </g>
+                    <text x="50" y="49" text-anchor="middle" class="dv">XX</text>
+                    <text x="50" y="60" text-anchor="middle" class="dk">Test cases</text>
+                  </svg>
+                  <ul class="ud-legend">
+                    <li><i class="s"></i><b>XX%</b>Successful</li>
+                    <li><i class="t"></i><b>XX%</b>Tested</li>
+                    <li><i class="d"></i><b>XX%</b>Defects</li>
+                    <li><i class="n"></i><b>XX%</b>Not Started</li>
+                  </ul>
+                </div>
               </div>
-              <div class="ud-filters">
-                <div class="ud-filter"><span class="fk">Module</span><span class="fv">All modules<b aria-hidden="true">&#9662;</b></span></div>
-                <div class="ud-filter"><span class="fk">Workstream</span><span class="fv">All workstreams<b aria-hidden="true">&#9662;</b></span></div>
-                <div class="ud-filter"><span class="fk">Owner</span><span class="fv">All owners<b aria-hidden="true">&#9662;</b></span></div>
-                <div class="ud-filter"><span class="fk">Status</span><span class="fv">All statuses<b aria-hidden="true">&#9662;</b></span></div>
+              <div class="ud-panel">
+                <h4>Test Cases by Workstream</h4>
+                <div class="ud-bars">
+              <div class="row"><span class="lbl">Workstream A</span><span class="bar"><i class="s" style="width:46%"></i><i class="t" style="width:26%"></i><i class="d" style="width:10%"></i><i class="n" style="width:10%"></i></span><span class="ct">XX</span></div>
+              <div class="row"><span class="lbl">Workstream B</span><span class="bar"><i class="s" style="width:40%"></i><i class="t" style="width:24%"></i><i class="d" style="width:8%"></i><i class="n" style="width:16%"></i></span><span class="ct">XX</span></div>
+              <div class="row"><span class="lbl">Workstream C</span><span class="bar"><i class="s" style="width:52%"></i><i class="t" style="width:14%"></i><i class="d" style="width:6%"></i><i class="n" style="width:14%"></i></span><span class="ct">XX</span></div>
+              <div class="row"><span class="lbl">Workstream D</span><span class="bar"><i class="s" style="width:34%"></i><i class="t" style="width:30%"></i><i class="d" style="width:12%"></i><i class="n" style="width:14%"></i></span><span class="ct">XX</span></div>
+              <div class="row"><span class="lbl">Workstream E</span><span class="bar"><i class="s" style="width:44%"></i><i class="t" style="width:20%"></i><i class="d" style="width:8%"></i><i class="n" style="width:18%"></i></span><span class="ct">XX</span></div>
+              <div class="row"><span class="lbl">Workstream F</span><span class="bar"><i class="s" style="width:30%"></i><i class="t" style="width:22%"></i><i class="d" style="width:10%"></i><i class="n" style="width:30%"></i></span><span class="ct">XX</span></div>
               </div>
+              </div>
+            </div>
+            <div class="ud-panel ud-defects">
+              <h4>Open Defects</h4>
               <div class="ud-table-wrap">
                 <table class="ud-table">
-                  <thead><tr><th>Test case</th><th>Module</th><th>Workstream</th><th>Owner</th><th>Status</th></tr></thead>
+                  <thead><tr><th>Key</th><th>Summary</th><th>Status</th><th>Owner</th><th>Module</th></tr></thead>
                   <tbody>
-              <tr><td>Test case A</td><td>Module A</td><td>Workstream 1</td><td>Tester A</td><td><span class="st"><i class="s"></i>Successful</span></td></tr>
-              <tr><td>Test case B</td><td>Module A</td><td>Workstream 1</td><td>Tester B</td><td><span class="st"><i class="t"></i>Tested</span></td></tr>
-              <tr><td>Test case C</td><td>Module B</td><td>Workstream 2</td><td>Tester C</td><td><span class="st"><i class="n"></i>Not Started</span></td></tr>
-              <tr><td>Test case D</td><td>Module B</td><td>Workstream 2</td><td>Tester A</td><td><span class="st"><i class="d"></i>Defect</span></td></tr>
-              <tr><td>Test case E</td><td>Module C</td><td>Workstream 3</td><td>Tester B</td><td><span class="st"><i class="s"></i>Successful</span></td></tr>
-              </tbody>
+                  <tr><td>Defect A</td><td>Placeholder summary</td><td><span class="st"><i class="d"></i>Open</span></td><td>Tester A</td><td>Module A</td></tr>
+                  <tr><td>Defect B</td><td>Placeholder summary</td><td><span class="st"><i class="d"></i>Open</span></td><td>Tester B</td><td>Module B</td></tr>
+                  <tr><td>Defect C</td><td>Placeholder summary</td><td><span class="st"><i class="d"></i>In review</span></td><td>Tester C</td><td>Module C</td></tr>
+                  <tr><td>Defect D</td><td>Placeholder summary</td><td><span class="st"><i class="d"></i>Open</span></td><td>Tester A</td><td>Module B</td></tr>
+                  </tbody>
                 </table>
               </div>
             </div>
-            <div class="ud-base" aria-hidden="true"></div>
           </div>
-          <figcaption id="ud-cap">Conceptual recreation &mdash; the original client dashboard cannot be shown publicly.<br>All names and values are neutral placeholders.</figcaption>
-        </figure>
-      </div>
+        </div>
+        <figcaption id="ud-cap">Conceptual recreation &mdash; the original client dashboard cannot be shown publicly. All names and values are neutral placeholders.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- ============ IMPACT / ROLE / TAKEAWAY ============ -->
+  <!-- ============ USED DURING UAT | IMPACT ============ -->
   <section class="ud-sec ud-last">
     <div class="container">
-      <div class="ud-three reveal">
-        <div class="ud-col">
+      <div class="ud-bottom reveal">
+        <div class="ud-used">
+          <span class="ud-eyebrow">Used During UAT</span>
+          <p>The team used the dashboard during daily UAT touchpoints to review testing progress, outstanding tests, and defects.</p>
+        </div>
+        <div class="ud-impact">
           <span class="ud-eyebrow">Impact</span>
-          <h2 class="ud-h3">From manual prep<br>to a live view.</h2>
-          <p>The team could go directly into the dashboard before daily UAT touchpoints and immediately see where testing stood and what needed attention, rather than manually piecing together progress across test cases.</p>
-          <p>The workflow provided clearer visibility into testing progress and exceptions as the team moved toward cutover and production go-live.</p>
-        </div>
-        <div class="ud-col">
-          <span class="ud-eyebrow">My Role</span>
-          <h2 class="ud-h3">UAT workflow +<br>dashboard design</h2>
-          <ul>
-            <li>Structured Xray test scripts and ownership</li>
-            <li>Assigned test cases across workstreams</li>
-            <li>Defined testing statuses and filtering logic</li>
-            <li>Built the Jira dashboard</li>
-            <li>Created views around the questions stakeholders needed to answer</li>
-            <li>Supported daily UAT visibility through cutover</li>
-          </ul>
-        </div>
-        <div class="ud-col">
-          <span class="ud-eyebrow">Takeaway</span>
-          <h2 class="ud-h3">Good tools make it easier to act on what you already know.</h2>
-          <p>This project reinforced the importance of designing around the decisions people need to make, not just the data that is available.</p>
+          <div class="ud-impact-cols">
+            <div><h3>Faster visibility</h3><p>into testing progress and exceptions</p></div>
+            <div><h3>Less manual effort</h3><p>piecing together progress before touchpoints</p></div>
+            <div><h3>Supported go-live readiness</h3><p>as the team moved toward cutover</p></div>
+          </div>
         </div>
       </div>
     </div>
