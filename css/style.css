@@ -2299,6 +2299,7 @@ img.portrait-photo {
 .pj-concepts-note { font-family: var(--font-display); font-style: italic; font-size: 0.9rem; color: var(--ink-muted); }
 .pj-concept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); margin-top: 1.1rem; }
 @media (max-width: 760px) { .pj-concept-grid { grid-template-columns: 1fr; } }
+.pj-concept-grid > .pj-concept:only-child { grid-column: 1 / -1; max-width: 560px; }
 .pj-concept { display: grid; grid-template-columns: 1fr 34%; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; color: inherit; min-height: 170px; transition: border-color .2s ease; }
 .pj-concept:hover { border-color: var(--border-strong); }
 .pj-concept-text { padding: 1.3rem 1.4rem; display: flex; flex-direction: column; }
@@ -2893,6 +2894,10 @@ p.ids2-right { font-size: 0.95rem; line-height: 1.65; color: var(--ink-soft); al
 @media (max-width: 960px) { .cur2-top { grid-template-columns: 1fr; row-gap: 1.6rem; } .cur2-problem { padding-right: 0; } .cur2-users { padding: 1.6rem 0 0; border-left: none; border-top: 1px solid var(--border); } }
 @media (max-width: 620px) { .cur2-five { grid-template-columns: 1fr 1fr; row-gap: 1rem; } .cur2-cards { grid-template-columns: 1fr; } }
 
+.cur2-loop { list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0; margin: 1.3rem 0 0; padding: 0; }
+.cur2-loop li { font-family: var(--font-display); font-weight: 500; font-size: 0.98rem; letter-spacing: 0; color: var(--navy); white-space: nowrap; }
+.cur2-loop li:not(:last-child)::after { content: "\2192"; display: inline-block; margin: 0 0.6rem; font-family: var(--font-body); font-weight: 400; color: var(--border-strong); }
+@media (max-width: 700px) { .cur2-loop li { font-size: 0.88rem; } .cur2-loop li:not(:last-child)::after { margin: 0 0.4rem; } }
 .cur2-screens { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: 1.2rem; }
 @media (max-width: 860px) { .cur2-screens { grid-template-columns: 1fr; gap: 1.6rem; } }
 .cur2-screens figure { margin: 0; }
